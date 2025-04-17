@@ -3,6 +3,12 @@
   "displayName": "PeriodToDot",
   "description": "在重命名文件时自动将中文句号替换为英文点",
   "version": "0.0.1",
+  "publisher": "msgk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/msgk239/PeriodToDot"
+  },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.85.0"
   },
