@@ -21,11 +21,17 @@
 
 ## 安装
 
-使用 .vsix 文件在本地安装：
-1. 下载 .vsix 文件
-2. 在 VS Code 中，打开扩展视图（Ctrl+Shift+X）
-3. 点击右上角的菜单（...），选择"从 VSIX 安装..."
-4. 选择下载的 .vsix 文件
+### 方法一：从 GitHub Releases 下载
+
+1. 前往 [GitHub Releases](https://github.com/msgk239/PeriodToDot/releases) 页面
+2. 下载最新版本的 `period-to-dot-0.0.1.vsix` 文件
+3. 在 VS Code 中，打开扩展视图（Ctrl+Shift+X）
+4. 点击右上角的菜单（...），选择"从 VSIX 安装..."
+5. 选择下载的 .vsix 文件
+
+### 方法二：从源码构建
+
+参考下方的"开发"和"打包"部分。
 
 ## 开发
 
@@ -50,6 +56,10 @@ npm run package
 ```
 
 生成的 .vsix 文件可直接用于安装。
+
+## 版本历史
+
+- v0.0.1 (2025-04-17)：初始版本，实现基本功能
 
 ## 许可证
 
