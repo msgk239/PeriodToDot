@@ -2,7 +2,7 @@
   "name": "period-to-dot",
   "displayName": "PeriodToDot",
   "description": "在重命名文件时自动将中文句号替换为英文点",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "msgk",
   "repository": {
     "type": "git",
@@ -15,7 +15,10 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished",
+    "onFileSystem:file"
+  ],
   "main": "./out/extension.js",
   "scripts": {
     "vscode:prepublish": "npm run compile",
@@ -24,7 +27,16 @@
     "package": "vsce package"
   },
   "contributes": {
-    "commands": []
+    "commands": [
+      {
+        "command": "period-to-dot.test",
+        "title": "测试 PeriodToDot 扩展"
+      },
+      {
+        "command": "period-to-dot.fixCurrentFile",
+        "title": "修正当前文件名中的中文句号"
+      }
+    ]
   },
   "devDependencies": {
     "@types/node": "^20.10.5",
